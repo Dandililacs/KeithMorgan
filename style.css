@@ -47,6 +47,7 @@ body{
     left: 0;
     z-index: 0;
     display: block;
+    background-repeat: repeat-y;
 }
 .twinkling{
     width: 10000px;
@@ -63,6 +64,7 @@ body{
     -o-animation: move-background 70s linear infinite;
     -webkit-animation: move-background 70s linear infinite;
     animation: move-background 70s linear infinite;
+    background-repeat: repeat-y;
 }
 /*now for the navbar*/
 .navBar{
@@ -117,9 +119,9 @@ body{
     z-index: 5;
     cursor: pointer;
     font-size: 30px;
-    padding: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
     margin: 10px;
     transition: transform 300ms ease;
     background-color: rgb(52, 76, 107);
@@ -127,7 +129,7 @@ body{
     border-radius: 54px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-    
+    border-color: black;
     
 }
 button:hover{
@@ -168,9 +170,7 @@ button:hover{
 .review:hover{
     transform: scale(1.1);
 }
-review:a{
-    color:aliceblue;
-}
+
 a{
     color:aliceblue;
 }
@@ -216,4 +216,63 @@ a{
 .navBarMars li{
     float: left;
     list-style-type: none;
+}
+
+
+/*Now the UFO Stuff*/
+.navBarUFO{
+    background-color: rgb(48, 66, 6);
+    width: 100%;
+    z-index: 5;
+}
+.navBarUFO ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(43, 60, 4);
+    background: cover;
+    padding: 0;
+    margin: 0;
+}
+.navBarUFO a{
+    color:rgb(193, 208, 224);
+    text-decoration: none;
+    padding: 25px;
+    display: block;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+}
+.navBarUFO a:hover{
+    background-color:rgb(19, 98, 3);
+}
+.navBarUFO li{
+    float: left;
+    list-style-type: none;
+}
+
+
+.ufoReports{
+    z-index: 5;
+    background-color: rgba(27, 143, 4, 0.238);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    align-items: center;
+    padding-left: 25px;
+}
+.ufoReview{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    width: 25%;
+    height: 25%;
+    background-color: rgba(64, 89, 6, 0.245);
+    color: aliceblue;
+    text-decoration: none;
+    margin: 20px;
+}
+.ufoReview:hover{
+    transform: scale(1.1);
 }
