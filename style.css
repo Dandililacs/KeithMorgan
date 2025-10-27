@@ -47,7 +47,6 @@ body{
     left: 0;
     z-index: 0;
     display: block;
-    background-repeat: repeat-y;
 }
 .twinkling{
     width: 10000px;
@@ -58,13 +57,12 @@ body{
     top: 0;
     bottom:0;
     right:0;
-    z-index:2;
+    z-index:1;
     -moz-animation: move-background 70s linear infinite;
     -ms-animation: move-background 70s linear infinite;
     -o-animation: move-background 70s linear infinite;
     -webkit-animation: move-background 70s linear infinite;
     animation: move-background 70s linear infinite;
-    background-repeat: repeat-y;
 }
 /*now for the navbar*/
 .navBar{
@@ -174,6 +172,9 @@ button:hover{
 a{
     color:aliceblue;
 }
+.epiRev{
+    color:black;
+}
 /*Mars Page Stuff*/
 
 .redTint{
@@ -253,14 +254,14 @@ a{
 
 .ufoReports{
     z-index: 5;
-    background-color: rgba(27, 143, 4, 0.238);
+    background-color: rgba(53, 4, 143, 0.411);
     padding-top: 2rem;
     padding-bottom: 2rem;
     display: flex;
     flex-wrap: wrap;
     width: 80%;
     align-items: center;
-    padding-left: 25px;
+    padding-left: 15%;
 }
 .ufoReview{
     display: flex;
@@ -268,10 +269,10 @@ a{
     flex-direction: column;
     width: 25%;
     height: 25%;
-    background-color: rgba(64, 89, 6, 0.245);
+    background-color: rgb(6, 47, 89);
     color: aliceblue;
     text-decoration: none;
-    margin: 20px;
+    margin: 10px;
 }
 .ufoReview:hover{
     transform: scale(1.1);
